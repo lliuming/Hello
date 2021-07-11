@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    1. 哪些类需要我去管理
+    2. 怎么维护他们之间的依赖关系（setter, constructor）
+-->
+<beans>
+
+    <bean id="userDao" class="com.example.dao.UserDaoImpl"></bean>
+    <bean id="userService" class="com.example.service.UserServiceImpl">
+<!--        setter-->
+        <property name="userDao" ref="userDao"></property>
+<!--        constructor-->
+<!--        <constructor-arg name="userDao" ref="userDao"></constructor-arg>-->
+    </bean>
+</beans>

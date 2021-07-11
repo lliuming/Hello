@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ioc" />
         <module name="test" />
+        <module name="customSpring" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />
